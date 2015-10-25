@@ -9,9 +9,7 @@
 </p>
 
 <h2>Comments</h2>
-<% @article.comments.each do |comment| %>
-    <%= render 'comments/comment', :comment => comment %>
-<% end %>
+<%= render @article.comments %>
 
 <h2>Add a comment:</h2>
 <%= render 'comments/form' %>
